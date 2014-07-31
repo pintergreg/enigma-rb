@@ -21,6 +21,14 @@ with:
 secret_key_base: <%=ENV['OPENSHIFT_SECRET_TOKEN']%>
 ```
 
+Push to openShift
+=================
+```
+git remote add openshift ssh://<your ssh url>
+
+git push --set-upstream openshift master
+```
+
 References
 ==========
 
