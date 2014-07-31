@@ -13,7 +13,7 @@
                 <img id="logo" src="/logo.png" width="300" />
                 <p id="motto"><h1>Enigma</h1> cipher written in Ruby and Rails</p>
                 </div>
-                <a href="#" id="github_ref"><img id="github" src="GitHub-Mark-Light-32px.png" title="Source code on GitHub" /></a>
+                <a href="https://github.com/pintergreg/enigma-rb" id="github_ref"><img id="github" src="/GitHub-Mark-Light-32px.png" title="Source code on GitHub" /></a>
             </div>
             <div id="middle">
                 <div id="enigma">
@@ -29,7 +29,7 @@
             </div>
             <div id="footer">
                 &copy; 2014, by Gergő Pintér <br />
-                <a href="#">more information</a> | <a href="http://en.wikipedia.org/wiki/Enigma_machine">what is enigma <img src="ext.png" width="12" /></a>
+                <a href="https://github.com/pintergreg/enigma-rb">more information</a> | <a href="http://en.wikipedia.org/wiki/Enigma_machine">what is enigma <img src="/ext.png" width="12" /></a>
             </div>
         </div>
     </body>
