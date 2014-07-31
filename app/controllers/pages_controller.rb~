@@ -1,0 +1,15 @@
+class PagesController < ApplicationController
+    def home 
+    end
+    
+    def result
+        require 'inifile'
+        $inifile = IniFile.load('lib/data.ini')
+        if $inifile.nil? then
+            puts "GORRAM"
+        end
+        require 'enigma'
+        e=EnigmaCipher.new(params[:rotI], params[:rotII], params[:rotIII], params[:RIoff], params[:RIIoff], params[:RIIIoff], params[:ref])
+        @result=e.encodeString(params[:input])
+    end
+end

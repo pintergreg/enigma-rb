@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Bolinum';
+  src: url('LinBiolinum_R_G.ttf');
+}
+
+@font-face {
+  font-family: 'BolinumBold';
+  src: url('LinBiolinum_RB_G.ttf');
+}
+
+body{
+    font-weight:bold;
+    font-family: 'Bolinum';
+    background: #e7e7e7;
+
+}
+
+#content{
+    font-family: 'Bolinum';
+
+}
+
+#header, #middle, #footer {
+    
+}
+
+#header{
+    background: #191919;
+    color: #e7e7e7;
+    padding: 20px 200px 20px 200px;
+
+}
+
+#title{
+    position:left;
+    display: inline-block;
+}
+
+#header h1{
+    display:inline-block;
+}
+
+#github{
+    float: right;
+}
+
+#middle{
+    background: #e7e7e7;
+}
+
+#enigma{
+    font-size: large;
+    padding: 0px 20px 20px 20px;
+    margin-left:180px;
+    margin-top:20px;
+    float: left;
+}
+
+
+#footer{
+    bottom: 0;
+    background: #191919;
+    color: #e7e7e7;
+    padding-top: 20px;
+    padding-bottom:20px;
+    position:fixed;
+    width:100%;
+    text-align:center;
+}
+
+#footer a{
+    color: #e7e7e7;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    color: #e7e7e7;
+    text-decoration: underline;
+}
+
+/*-=-= INFO =-=-*/
+#info{
+    cursor: default;
+    font-family: 'Bolinum';
+    padding: 20px;
+    margin-right:200px;
+    margin-top:20px;
+    float:right;
+    overflow: auto;
+    background: #d6d6d6;
+    /*border: 1px solid #191919;*/
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 1px #969696;
+}
+
+#info h2{
+    padding-bottom: 4px;
+}
+
+ul{
+    list-style-type: square;
+    margin-left:2em;
+    margin-bottom: 1em;
+}
+
+/*-=-= FORM =-=-*/
+
+.rotoroffset{
+    width: 2em;
+}
+
+input[type="text"]{
+    padding: 4px;
+    border: solid 1px #cdcdcd;
+    transition: box-shadow 0.3s, border 0.3s;
+    border-radius: 4px;
+    font-size: large;
+    margin: 5px 1px;
+    font-family: 'Bolinum';
+    font-weight: bold;
+}
+
+input[type="text"]:focus, select:focus {
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #969696;
+    border-radius: 4px;
+    font-size: large;
+    font-family: 'Bolinum';
+    font-weight: bold;
+}
+
+select{
+    padding: 4px;
+    border: solid 1px #cdcdcd;
+    transition: box-shadow 0.3s, border 0.3s;
+    border-radius: 4px;
+    font-size: large;
+    margin: 1px 1px 5px 1px;
+    font-family: 'Bolinum';
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background: #191919;
+    border: 1px solid #CCC;
+    padding: 5px 25px 5px 25px;
+    color: #e7e7e7;
+    font-weight:bold;
+    font-size: large;
+    font-family: 'Bolinum';
+    border-radius: 4px;
+}
+input[type="submit"]:hover {
+    color: #191919;
+    background-color: #e7e7e7;
+    border-color: #191919;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px #969696;
+}
+
+/*-=-= RESULT =-=-*/
+#result{
+    padding: 20px;
+    background: #d6d6d6;
+    left:200px;
+    right:200px;
+    position:fixed;
+    border: 1px solid #191919;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 1px #969696;
+    
+    /*font-family: monospace;*/
+}
+
+#result h2{
+    margin-bottom:20px;
+    cursor: default;
+}
+
+#result p{
+    margin-bottom:20px;
+}
+
+#result a{
+    background: #191919;
+    border: 1px solid #CCC;
+    padding: 5px 25px 5px 25px;
+    color: #e7e7e7;
+    font-weight:bold;
+    font-size: large;
+    font-family: 'Bolinum';
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top:20px;
+}   
+
+#result a:hover{
+    color: #191919;
+    background-color: #e7e7e7;
+    border-color: #191919;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px #969696;
+}

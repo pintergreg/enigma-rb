@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>enigma.rb</title>
+        <%= stylesheet_link_tag "reset.css" %>
+        <%= stylesheet_link_tag "e.css" %>
+    </head>
+    <body>
+        <div id="content">
+            <div id="header">
+                <div id="title">
+                <img id="logo" src="/logo.png" width="300" />
+                <p id="motto"><h1>Enigma</h1> cipher written in Ruby and Rails</p>
+                </div>
+                <a href="#" id="github_ref"><img id="github" src="/GitHub-Mark-Light-32px.png" title="Source code on GitHub" /></a>
+            </div>
+            <div id="middle">
+                <div id="enigma">
+                    <form name="cipher" action="http://0.0.0.0:3000/submit/" method="get">
+                            Rotors: 
+                            <select name="rotI">
+                                <option value="1" selected="selected">I</option>
+                                <option value="2">II</option>
+                                <option value="3">III</option>
+                                <option value="4">IV</option>
+                                <option value="5">V</option>
+                                <option value="6">VI</option>
+                                <option value="7">VII</option>
+                                <option value="8">VIII</option>
+                            </select>
+                            <select name="rotII">
+                                <option value="1">I</option>
+                                <option value="2" selected="selected">II</option>
+                                <option value="3">III</option>
+                                <option value="4">IV</option>
+                                <option value="5">V</option>
+                                <option value="6">VI</option>
+                                <option value="7">VII</option>
+                                <option value="8">VIII</option>
+                            </select> 
+                            <select name="rotIII">
+                                <option value="1">I</option>
+                                <option value="2">II</option>
+                                <option value="3" selected="selected">III</option>
+                                <option value="4">IV</option>
+                                <option value="5">V</option>
+                                <option value="6">VI</option>
+                                <option value="7">VII</option>
+                                <option value="8">VIII</option>
+                            </select> 
+                            Reflector:
+                            <select name="ref">
+                                <option value="1" selected="selected">B</option>
+                                <option value="2">C</option>
+                            </select> 
+                            <br />
+                            Rotor start: 
+                            <!--<input type="text" name="R1off" required="required" class="rotoroffset">
+                            <input type="text" name="R2off" required="required" class="rotoroffset"> 
+                            <input type="text" name="R3off" required="required" class="rotoroffset">
+                           
+                            <br />-->
+                            <select name="RIoff">
+                                <%= options_for_select('A'..'Z') %>
+                            </select>
+                            <select name="RIIoff">
+                                <%= options_for_select('A'..'Z') %>
+                            </select>
+                            <select name="RIIIoff">
+                                <%= options_for_select('A'..'Z') %>
+                            </select>
+                            <br />
+                            Text to cipher: <input type="text" name="input" required="required">
+                            <br />
+                            <input type="submit" value="Cipher">
+                    </form>
+                </div>
+                <div id="info">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>uses lettes from A to Z</li>
+                        <li>rotor I, II, III, IV, V, VI, VII and VIII</li>
+                        <li>reflector B and C</li>
+                    </ul>
+                    <h2>Plans</h2>
+                    <ul>
+                        <li>dechiper function</li>
+                        <li>plugboard</li>
+                    </ul>
+                    <!--<h2>References</h2>
+                    <ol>
+                        <li>dechiper function</li>
+                        <li>plugboard</li>
+                        <li>dechiper function</li>
+                        <li>plugboard</li>
+                        <li>dechiper function</li>
+                        <li>plugboard</li>
+   
+                    </ol>-->
+                </div>
+            </div>
+            <div id="footer">
+                &copy; 2014, by Gergő Pintér <br />
+                <a href="#">more information</a> | <a href="http://en.wikipedia.org/wiki/Enigma_machine">what is enigma <img src="/ext.png" width="12" /></a>
+            </div>
+        </div>
+    </body>
+</html>
