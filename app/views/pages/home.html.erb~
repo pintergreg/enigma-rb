@@ -102,7 +102,7 @@
             </div>
             <div id="footer">
                 &copy; 2014, by Gergő Pintér <br />
-                <a href="https://github.com/pintergreg/enigma-rb">more information</a> | <a href="http://en.wikipedia.org/wiki/Enigma_machine">what is enigma <img src="/ext.png" width="12" /></a>
+                <a href="https://github.com/pintergreg/enigma-rb">more information</a> | <a href="http://en.wikipedia.org/wiki/Enigma_machine"  target="_blank">what is enigma <img src="/ext.png" width="12" /></a>
             </div>
         </div>
     </body>
