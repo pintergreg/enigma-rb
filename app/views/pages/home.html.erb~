@@ -17,7 +17,7 @@
             </div>
             <div id="middle">
                 <div id="enigma">
-                    <form name="cipher" action="http://0.0.0.0:3000/submit/" method="get">
+                    <form name="cipher" action="/submit" method="get">
                             Rotors: 
                             <select name="rotI">
                                 <option value="1" selected="selected">I</option>
@@ -85,7 +85,6 @@
                     </ul>
                     <h2>Plans</h2>
                     <ul>
-                        <li>dechiper function</li>
                         <li>plugboard</li>
                     </ul>
                     <!--<h2>References</h2>
