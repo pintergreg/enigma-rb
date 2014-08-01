@@ -71,6 +71,8 @@
                                 <%= options_for_select('A'..'Z') %>
                             </select>
                             <br />
+                            <input type="checkbox" name="blocking" value="">
+                            <br />
                             Text to (de)cipher: <input type="text" name="input" required="required">
                             <br />
                             <input type="submit" value="Cipher">
@@ -87,16 +89,6 @@
                     <ul>
                         <li>plugboard</li>
                     </ul>
-                    <!--<h2>References</h2>
-                    <ol>
-                        <li>dechiper function</li>
-                        <li>plugboard</li>
-                        <li>dechiper function</li>
-                        <li>plugboard</li>
-                        <li>dechiper function</li>
-                        <li>plugboard</li>
-   
-                    </ol>-->
                 </div>
             </div>
             <div id="footer">
