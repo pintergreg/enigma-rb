@@ -10,6 +10,6 @@ class PagesController < ApplicationController
         end
         require 'enigma'
         e=EnigmaCipher.new(params[:rotI].to_i, params[:rotII].to_i, params[:rotIII].to_i, params[:RIoff], params[:RIIoff], params[:RIIIoff], params[:ref].to_i)
-        @result=e.encodeString(params[:input])
+        @result=e.encodeString(params[:input],false)
     end
 end

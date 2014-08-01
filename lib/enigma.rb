@@ -98,14 +98,20 @@ class EnigmaCipher
         r9 = @aIII[@rII.index r8]
         return @I[@rIII.index r9]
     end
-
-    def encodeString(input)
+  
+    def encodeString(input, blocking)
         input.upcase!
         result = ""
+        k=0
         for i in 0..input.length-1 do    
             if not input[i] =~ /[\s]/ then
                 result += encodeChar input[i]
-            else
+                k+=1
+                if blocking and k==5 then
+                    result += " "
+                    k=0
+                end
+            elsif not blocking
                 result += " " 
             end
         end

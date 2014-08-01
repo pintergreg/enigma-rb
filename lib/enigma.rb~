@@ -43,7 +43,6 @@ class EnigmaCipher
                 r = $inifile['RotorVIII']['array'].split(',')
                 n = $inifile['RotorVIII']['notch'].split('+')
         end
-        puts "::::"+r.to_s
         return r,n
     end
     
@@ -59,8 +58,6 @@ class EnigmaCipher
         @rI,@nI=serRotor(rotI)
         @rII,@nII=serRotor(rotII)
         @rIII,@nIII=serRotor(rotIII)
-        
-        puts ">>>>>>>>>"+@rI.to_s
         
         @I = $inifile['Alphabet']['array'].split(',')
         @aIII = @I.clone
@@ -101,14 +98,20 @@ class EnigmaCipher
         r9 = @aIII[@rII.index r8]
         return @I[@rIII.index r9]
     end
-
-    def encodeString(input)
+  
+    def encodeString(input, blocking)
         input.upcase!
         result = ""
+        k=0
         for i in 0..input.length-1 do    
             if not input[i] =~ /[\s]/ then
                 result += encodeChar input[i]
-            else
+                k+=1
+                if k==5 then
+                    result += " "
+                    k=0
+                end
+            elsif not blocking
                 result += " " 
             end
         end
